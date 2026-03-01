@@ -12,7 +12,7 @@ const Categories = () => {
 
                   <div className='grid grid-cols-1 my-5'>
                         {
-                              categories.map((category) => <NavLink className={"btn py-2 border-0 bg-base-100 hover:bg-base-200"}>{category.name}</NavLink>)
+                              categories.map((category) => <NavLink key={category.id} to={`/category/${category.id}`} className={"btn py-2 border-0 bg-base-100 hover:bg-base-200 text-accent"}>{category.name}</NavLink>)
                         }
                   </div>
             </div >
