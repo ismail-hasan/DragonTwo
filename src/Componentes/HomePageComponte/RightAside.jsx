@@ -1,6 +1,7 @@
 import React from 'react';
 import { FcGoogle } from 'react-icons/fc';
 import { IoLogoGithub } from 'react-icons/io';
+import FindUs from '../FindUs';
 
 const RightAside = () => {
       return (
@@ -12,7 +13,11 @@ const RightAside = () => {
 
                   <button className='w-full btn btn-outline mb-4'><IoLogoGithub size={28} />Sign In Google</button>
 
-                
+
+                  <section>
+                        <FindUs></FindUs>
+                  </section>
+
             </div>
       );
 };

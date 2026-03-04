@@ -1,5 +1,6 @@
 import React from "react";
 import { FaEye, FaStar } from "react-icons/fa";
+import { NavLink } from "react-router";
 
 const NewsCard = ({ singleNews }) => {
       console.log("dd", singleNews)
@@ -13,7 +14,7 @@ const NewsCard = ({ singleNews }) => {
       } = singleNews;
 
       return (
-            <div className="max-w-full mx-5  bg-white shadow-lg rounded-xl overflow-hidden border">
+            <div className="bg-white shadow-lg rounded-xl overflow-hidden border">
 
                   {/* Author Section */}
                   <div className="flex items-center justify-between p-4">
@@ -49,9 +50,9 @@ const NewsCard = ({ singleNews }) => {
                                     : details}
                         </p>
 
-                        <button className="text-blue-600 text-sm font-semibold">
+                        <NavLink to={``} className="text-blue-600 text-sm font-semibold">
                               Read More
-                        </button>
+                        </NavLink>
 
                         {/* Rating + Views */}
                         <div className="flex items-center justify-between mt-4 text-sm text-gray-600">
